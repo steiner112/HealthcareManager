@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../Forms/Forms.css';
+import deleteIMG from '../assets/delete.svg';
+import EditIMG from '../assets/edit.svg';
 
 export default function ServiceForm() {
   const [services, setServices] = useState([]);
@@ -98,14 +100,14 @@ export default function ServiceForm() {
                 </span>
                 <div id='btnBox'>
                 <img
-                src='/src/assets/edit.svg'
+                src={EditIMG}
                   className="editBTN"
                   onClick={() => editTask(index)}
                    alt='edit'
                   
                 />
                 <img
-                src='/src/assets/delete.svg'
+                src={deleteIMG}
                   className="deleteBTN"
                   onClick={() => deleteTask(index)}
                   alt='delete'
