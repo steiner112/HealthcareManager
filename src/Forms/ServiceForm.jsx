@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../Forms/Forms.css';
 import deleteIMG from '../assets/delete.svg';
 import EditIMG from '../assets/edit.svg';
+import ListImg from "../assets/list.png" ;
 
 export default function ServiceForm() {
   const [services, setServices] = useState([]);
@@ -85,14 +86,14 @@ export default function ServiceForm() {
             />
 
             <button className="button-55" onClick={addOrEditTask} role="button">
-              {isEditing ? 'Edit Service' : 'Add Service'}
+              {isEditing ? 'Edit-Service' : 'Add-Service'}
             </button>
           </form>
           </div>
           <div className='BXX1'>
 
           <ul id='List'>
-            <img src="\src\assets\list.png" alt="" />
+            <img src={ListImg} alt="list" />
             {services.map((service, index) => (
               <li key={index}>
                 <span className="Text">

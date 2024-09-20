@@ -5,13 +5,11 @@
     height: 60vh;
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    border: 2px double white;
     align-items: center;
     justify-content: center;
     padding: 8px;
-    background-color: rgba(1, 1, 7, 0.414);
     backdrop-filter: blur(20px);
-    box-shadow: 1px 1px 20px 2px rgba(48, 38, 38, 0.488);
     animation: boxFade 0.8s linear;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -48,7 +46,7 @@
 
 #addForm input {
     min-width: 210px;
-    width: 70%;  /* Responsive width */
+    width: 70%;  
     padding: 8px;
     margin-bottom: 12px;
     background-color: rgba(255, 255, 255, 0.282);
@@ -61,21 +59,19 @@
 
 .button-55 {
     position: absolute;
-
     bottom: 10%;
     align-self: center;
-    background-color: #ffffff41;
-    border-radius: 50px;
+    background-color: #ffffff73;
+    border-radius: 30px;
     border-style: none;
-    border-width: 2px;
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    color: #ffffff;
+    border-width: 1px;
+   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.14);
+    color: #00000085;
     cursor: pointer;
     font-family: Neucha, sans-serif;
     font-size: 1rem;
     line-height: 23px;
-    outline: none;
-    padding: .75rem;
+    padding:  10px;
     text-decoration: none;
     transition: all 235ms ease-in-out;
     user-select: none;
@@ -92,13 +88,12 @@
 
 /* List Styles */
 #List {
-    box-shadow: 1px 1px 20px 2px rgb(0, 0, 0);
     list-style-type: none;
+    border: 2px solid white;
     width: 34vw;
     height: 60vh;
     font-size: 3.2vmin;
     color: aliceblue;
-    background-color: rgba(219, 192, 192, 0.733);
     min-width: 300px;
     padding: 8px;
     margin-bottom: 10px;
