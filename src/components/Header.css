@@ -1,0 +1,39 @@
+header{
+    position: relative;
+    height: fit-content;
+}
+nav{
+    position: relative;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px 2px;
+    height: 10vh;
+}
+#img-text{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 4.5vmin;
+    font-weight: 386;
+    font-style: normal;   
+
+    span{
+        color: rgb(0, 205, 251);
+        font-family: "Changa", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+   }
+   img{
+    width: 8vmin;
+   }
+}

@@ -1,0 +1,195 @@
+#addForm {
+    position: relative;
+    min-width: 300px;
+    width: 34vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: rgba(1, 1, 7, 0.414);
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 1px 20px 2px rgba(48, 38, 38, 0.488);
+    animation: boxFade 0.8s linear;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 386;
+    font-style: normal;   
+    border-radius: 10px;
+    font-size: 3.2vmin;
+    transition: all 0.2s ease;
+
+    &:hover{
+    box-shadow: 1px 1px 15px 4px rgba(48, 38, 38, 0.922);
+
+    }
+
+
+}
+
+@keyframes boxFade {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#addForm label {
+    display: flex;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#addForm input {
+    min-width: 210px;
+    width: 70%;  /* Responsive width */
+    padding: 8px;
+    margin-bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.282);
+    border: none;
+    color: aliceblue;font-weight: 200;
+    outline: none;
+    border-radius: 12px;
+}
+
+
+.button-55 {
+    position: absolute;
+
+    bottom: 10%;
+    align-self: center;
+    background-color: #ffffff41;
+    border-radius: 50px;
+    border-style: none;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    user-select: none;
+}
+
+.button-55:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/* List Styles */
+#List {
+    box-shadow: 1px 1px 20px 2px rgb(0, 0, 0);
+    list-style-type: none;
+    width: 34vw;
+    height: 60vh;
+    font-size: 3.2vmin;
+    color: aliceblue;
+    background-color: rgba(219, 192, 192, 0.733);
+    min-width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    overflow-y: auto; 
+    animation: boxFade 1s linear;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 386;
+    font-style: normal;   
+    border-radius: 10px;
+    
+    transition: all 0.2s ease;
+
+    &:hover{
+        box-shadow: 1px 1px 20px 5px rgb(0, 0, 0);
+
+    }
+
+    li{
+        margin-top: 3px;
+        border-bottom: 4px solid;
+        padding: 2px;
+    }
+    img{
+        width: 5vmin;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;  
+}
+
+.Text {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.Text p {
+    color: rgb(36, 19, 19);
+}
+
+/* Box Container */
+.BXX1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin: 10px 0;
+    
+}
+
+@media (max-width: 768px) {
+    #addForm, #List {
+        width: 80vw;  
+        min-width: unset;
+    }
+
+    .BXX1 {
+        width: 90vw; 
+    }
+
+    .button-55 {
+        font-size: 0.9rem;  
+        padding: 0.5rem;  
+    }
+}
+
+@media (max-width: 480px) {
+    #addForm, #List {
+        width: 90vw;  
+    }
+
+    .BXX1 {
+        flex-direction: column; 
+        width: 100vw;
+    }
+
+    .button-55 {
+        font-size: 0.8rem;  
+        padding: 0.4rem;
+    }
+}
+
+#btnBox{
+    display: flex;
+    flex-direction: row;
+    img{
+        margin: 10px;
+        min-width: 20px;
+        width: 3vmin;
+    }
+}
