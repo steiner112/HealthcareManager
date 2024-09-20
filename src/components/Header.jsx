@@ -6,7 +6,7 @@ export default function header() {
     <>
     <header>
      <nav>
-     <span id='img-text'> <img src="\src\assets\hospital.gif" alt="logo" /> <h1>Healthcare <span>Services</span></h1></span>  
+     <span id='img-text'> <img src="\src\assets\hospital.svg" alt="logo" /> <h1>Healthcare <span>Services</span></h1></span>  
      </nav>
      </header>
     </>
